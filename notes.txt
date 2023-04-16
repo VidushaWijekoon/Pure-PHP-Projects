@@ -29,7 +29,9 @@ array_push() -> add items to array
 array_pop() -> remove last array
 array_shift() -> remove first array
 array_key_exists() // Check array key exists
-
+is_dir()
+is_file()
+file_exists()
 unset() // destroy variable // also restory array
 
 $x = 200_000
@@ -67,3 +69,6 @@ TEXT
 // Nullsafe Operators PHP8(?)
 
 // match expression working same like switch statements but have some diffrences
+
+require will produce a fatal error (E_COMPILE_ERROR) and stop the script
+include will only produce a warning (E_WARNING) and the script will continue
