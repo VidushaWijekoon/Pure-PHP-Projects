@@ -1,0 +1,69 @@
+& is reference to another variable
+
+constants - 
+define("value", "name")
+inbuild define functions in PHP
+
+# falsy booleans are
+interger 0, -0 = false
+float 0.0, -0.0 = false
+'' = false
+'0' = false
+[] = false
+null = false
+
+PHP_INT_MAX - PHP_INT_MIN => inbuild constants
+PHP_FLOAT_MAX - PHP_FLOAT_MIN => inbuild constants
+
+is_bool()
+is_int()
+is_float()
+is_nan()
+is_infinite()
+is_finite()
+is_null()
+is_array()
+uc_first()
+strpos()
+array_push() -> add items to array
+array_pop() -> remove last array
+array_shift() -> remove first array
+array_key_exists() // Check array key exists
+
+unset() // destroy variable // also restory array
+
+$x = 200_000
+
+# Heredoc
+$text = <<<TEXT
+line 1 
+line 2
+line 3
+TEXT
+
+echo nl2br($text)
+
+# Nowdoc -> using single quotes
+$text = <<<TEXT
+line 1 
+line 2
+line 3
+TEXT
+
+/* Operators */
+
+// Arithmetic Operators (+, -, *, /, %, **)
+// Assignment Operators (=, +=, -=, /=, %=, **=)
+// String Operators (., .=)
+// Comparison Operators (==, ===, !=, <>, <, >, <=, >=)
+// Itenory Operators (??, ?:)
+// Error Operators (@)
+// Increment. Decrement (++, --)
+// Logical Operators (&&, ||, !, and, or, xor)
+// Bitwise Operators (&, |, ^, ~, <<, >>)
+// Array Operators(+, ==, ===, !=, <>, !==)
+// Execution Operators ('')
+// Type Operators (intanceof)
+// Nullsafe Operators PHP8(?)
+
+// match expression working same like switch statements but have some diffrences
