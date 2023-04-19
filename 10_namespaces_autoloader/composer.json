@@ -1,0 +1,16 @@
+{
+    "name": "user_name/10_namespace_autoloader",
+    "autoload": {
+        "psr-4": {
+            "UserName\\10NamespaceAutoloader\\": "src/",
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "vidusha"
+        }
+    ],
+    "require": {}
+    
+}
