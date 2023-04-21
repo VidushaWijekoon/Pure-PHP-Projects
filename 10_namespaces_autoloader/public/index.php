@@ -24,6 +24,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use App\PaymentGateway\Paddle\Transaction;
 
-$paddleTransaction = new Transaction();
+$paddleTransaction = new Transaction(25, 'Transaction 1');
 
-var_dump($paddleTransaction);
+echo "<br>";
+// var_dump($paddleTransaction);

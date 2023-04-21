@@ -1,0 +1,18 @@
+M = model -> do the database connection and store , retrive data from database
+V = View -> Frontend this feature can see to client
+C = Controller -> action happend between controller get the client request and send to model
+R = Router -> Router go to controller
+
+Framework used MVC in php
+Laravel, CodeIgniter, Symfony, yiiframework, cakephp, zend
+
+Super Global Variables
+
+$_SERVER
+$_GET
+$_POST
+$_FILES
+$_COOKIES
+$_SESSION
+$_REQUEST
+$_ENV

@@ -1,0 +1,13 @@
+{
+    "name": "vidusha/12_mvc",
+    "autoload": {
+        "psr-4": {
+            "Vidusha\\12Mvc\\": "src/",
+            "App\\": "app/"
+        }
+    },
+    "authors": [{
+        "name": "vidusha"
+    }],
+    "require": {}
+}
