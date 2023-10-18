@@ -83,7 +83,6 @@
             - %	    Modulus (Division Remainder)
 
         - Assignment Operators
-
             - (=, +=, -=, *=, /=, %=)
 
         - Comparison Operators
@@ -110,21 +109,18 @@
             - (?)
 
         - PHP Increment / Decrement Operators
-
             - ++$x  Pre Increment
             - $x++  Post Increment
             - --$x  Pre Decrement
             - $x--  Post Decrement
 
         - Logical Operators
-
             - &&, and	logical and
             - ||, or	logical or
             - !	        logical not
             - xor       logical Xor
 
         - String Operators
-
             .   Concatenation
             .=  Concatenation Assignment
 
@@ -137,7 +133,6 @@
             - !==	Non-identity
 
         -- String Operators
-
             ?   Ternary
             ??  Null coalescing
 
@@ -173,7 +168,6 @@
     ## php.ini php configuration
 
     ## Errors in php
-
         - Fatal Error
         - Syntax Error
         - Parse Error
@@ -193,22 +187,38 @@
             - They allow for better organization by grouping classes that work together to perform a task
             - They allow the same name to be used for more than one class
             - Without namespace all class store in global space
+        
+        - Method Override
+            - Change parent property value in child class
+            - But cannot change the parent class value directly
+            - Need to call Parent class to change the value (parent::__contruct)
+            - We cannot override final class
 
         - Inheritance 
             - Inherit from another class , Inherit from parent class
-
-        - Encapsulation 
-            - Hide sensitive data from users, Widely using getter and setter
-
+            - Extends
+            - We can override
+            - Cannot change visibilty of the access modifiers
+            - Cannot extend if the class final class
+            - Can be break the encapsulation principle due to able to use public 
+            
         - Polymorphism
             - It occurs when we have many classes that are related to each other by inheritance.
-            - Extends
-            
+
         - Abstraction
             - Process of hiding certain details and showing only essential information to the user
-            - abstract keyword is a non-access modifier, used for classes and methods
+            - Abstract keyword is a non-access modifier, used for classes and methods
             - Parent class has a named method, but need its child class(es) to fill out the tasks.
+            - Using Public break the Abstraction princials 
+            - Hide actual implementation
 
+        - Encapsulation 
+            - Bundle of data and operates in class in one unit
+            - Hide sensitive data from users, Internal Persentation, Widely using getter and setter
+            - Public break the Encapsulation princials, property must be use Protected or Private
+            - Getter and Setter don't always break the encapsulation principals
+            - Hide's internal data and informations
+            
         - Traits
             - PHP only supports single inheritance: a child class can inherit only from one single parent.
 
@@ -216,7 +226,6 @@
             - Interfaces allow you to specify what methods a class should implement.
             - Interfaces cannot have properties
             - All interface methods must be public
-
 
         - PHP_INT_MAX && PHP_INT_MIN
         - PHP_FLOAT_MAX && PHP_FLOAT_MIN
@@ -227,7 +236,6 @@
         - file_exists                       // Check file in there
         - unlink()                          // Delete File
         - copy()                            // Copy File
-        - rename('sample.txt, rename.txt)   // Copy File
         - rename('sample.txt, rename.txt)   // Copy File
     
         - is_bool($x)                       // Check Bool or Not , Return true or false
